@@ -51,7 +51,7 @@ const handleNav = () =>{
   return (
     <>
     <Navbar/>
-    <div className='sm:h-screen pb-20 h-full bg-gradient-to-r from-white to-blue-200'>
+    <div className='sm:h-screen  h-full bg-gradient-to-r from-white to-blue-200 pb-20'>
       
       <div className='flex justify-center pt-5  '>
       <h1 className='text-3xl p-2 text-transparent bg-clip-text bg-gradient-to-r to-indigo-600 from-blue-400'>Products</h1>
