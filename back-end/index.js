@@ -10,7 +10,7 @@ dotenv.config()
 app.use(express.json())
 app.use(cors( 
 {
-        origin: [""],
+        origin: ["https://mern-stack-iota-murex.vercel.app/"],
         methods: ["POST","GET"],
         credentials:true
     }
