@@ -12,13 +12,13 @@ app.use(cors(
 {
         origin: ["https://mern-stack-iota-murex.vercel.app"],
         methods: ["POST","GET"],
-        credentials:true
+        credentials:true,
     }
 ))
 app.use(bodyParser.json())
 
 app.use('/api/products',router)
-app.get('/api/products',(req,res)=>{
+app.get('/',(req,res)=>{
 res.json("hello");
 }
 
