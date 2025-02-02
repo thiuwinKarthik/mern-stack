@@ -12,7 +12,7 @@ app.use(cors(
 {
         origin: 'https://mern-stack-iota-murex.vercel.app/',
         methods: ['POST','GET','DELETE'],
-        allowedHeaders:['Content-Type']
+        allowedHeaders:['Content-Type'],
         credentials:true,
     }
 ))
