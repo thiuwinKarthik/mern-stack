@@ -16,7 +16,7 @@ const CreateProduct = () => {
       e.preventDefault();
       const item ={ name, price , image }
     try{
-      const res = await fetch("http://localhost:4000/api/products/create",{
+      const res = await fetch("https://mern-stack-lovat.vercel.app/create",{
         method:'POST',
         headers:{'Content-Type':'application/json'},
         body:JSON.stringify(item)
