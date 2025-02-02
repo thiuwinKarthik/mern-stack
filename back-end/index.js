@@ -8,7 +8,13 @@ const bodyParser = require('body-parser')
 const app = express()
 dotenv.config()
 app.use(express.json())
-app.use(cors())
+app.use(cors( 
+{
+        origin: [""],
+        methods: ["POST","GET"],
+        credentials:true
+    }
+))
 app.use(bodyParser.json())
 
 app.use('/api/products',router)
