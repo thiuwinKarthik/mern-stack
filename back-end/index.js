@@ -18,12 +18,13 @@ app.use(cors(
 app.use(bodyParser.json())
 
 app.use('/api/products',router)
+const port = 4000;
 // app.get('/api/products',(req,res)=>{
 // res.json("hello");
 // }
 
-app.listen(process.env.port,()=>{
-    console.log(`server started running on ${process.env.port}`)
+app.listen(port,()=>{
+    console.log(`server started running on ${port}`)
     connectDB()
 })
  
