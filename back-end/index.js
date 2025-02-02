@@ -18,7 +18,7 @@ app.use(cors(
 app.use(bodyParser.json())
 
 app.use('/api/products',router)
-app.get('/api/products',(req,res)=>{
+app.get('/',(req,res)=>{
 res.json("hello");
 }
 
