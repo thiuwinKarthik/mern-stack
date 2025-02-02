@@ -11,7 +11,7 @@ const Home = () => {
   const [products,setProduct] = useState([{}])
   const navigate = useNavigate()
 useEffect(()=>{
-    fetch('https://mern-stack-server-gamma.vercel.app')
+    fetch('https://mern-stack-2-rvpa.onrender.com/api/products')
    .then(res => res.json())
    .then((data) =>{
     setProduct(data) 
@@ -21,7 +21,7 @@ useEffect(()=>{
 const handleDelete = async(id)=>{
     
   try{
-     const res = await fetch(`https://mern-stack-server-gamma.vercel.app/${id}`,{
+     const res = await fetch(`https://mern-stack-2-rvpa.onrender.com/api/products/${id}`,{
       method:'DELETE',
      })
      if(res.ok){
