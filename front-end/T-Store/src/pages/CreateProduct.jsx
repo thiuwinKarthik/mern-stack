@@ -16,7 +16,7 @@ const CreateProduct = () => {
       e.preventDefault();
       const item ={ name, price , image }
     try{
-      const res = await fetch("https://mern-stack-server-gamma.vercel.app/create",{
+      const res = await fetch("https://mern-stack-2-rvpa.onrender.com/api/products/create",{
         method:'POST',
         headers:{'Content-Type':'application/json'},
         body:JSON.stringify(item)
